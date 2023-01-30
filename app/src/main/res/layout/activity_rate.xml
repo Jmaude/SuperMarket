@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end">
+
+    <TextView
+        android:id="@+id/ldView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="Liquor Department :"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/ldRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="Produce department"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/pdRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="Meat Department"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/mdRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/csView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="Cheese Selection"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/csRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/eocView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ease of Checkout"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/eocRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ldaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="40dp"
+            android:text="Liquor Department:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ldaView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="75dp"
+            android:text="--"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ldaView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:text="--"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ldaView5" />
+
+        <TextView
+            android:id="@+id/ldaView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:text="--"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ldaView6" />
+
+        <TextView
+            android:id="@+id/ldaView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:text="--"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ldaView7" />
+
+        <TextView
+            android:id="@+id/ldaView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="75dp"
+            android:text="--"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ldaView8" />
+
+        <TextView
+            android:id="@+id/mdaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:text="Meat Department"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdaView" />
+
+        <TextView
+            android:id="@+id/csaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:text="Cheese Selection : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mdaView" />
+
+        <TextView
+            android:id="@+id/csaView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:text="Cheese Selection : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/csaView" />
+
+        <TextView
+            android:id="@+id/pdaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:text="Prodcue Department : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ldaView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
