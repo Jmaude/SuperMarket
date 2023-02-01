@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 public class RatingActivity extends AppCompatActivity  {
-    //float avg;
+    float avg;
     private Rating currentRating;
 
     @Override
@@ -53,11 +53,11 @@ public class RatingActivity extends AppCompatActivity  {
                     final RatingBar etEOC = findViewById(R.id.eocRatingBar);
                     currentRating.setEocRating(etEOC.getRating());
 
-                     /*avg = ((currentRating.getLiquorDptRating() +
+                     avg = ((currentRating.getLiquorDptRating() +
                             currentRating.getProduceDptRating() +
                             currentRating.getMeatDptRating() +
                             currentRating.getCheeseSelRating() +
-                            currentRating.getEocRating()) / 5);*/
+                            currentRating.getEocRating()) / 5);
 
                     boolean wasSuccessful;
                     SuperMarketDataSource ds = new SuperMarketDataSource(RatingActivity.this);
@@ -74,18 +74,31 @@ public class RatingActivity extends AppCompatActivity  {
 
                     if (wasSuccessful) {
                         //display average rating
-                        Intent intent = new Intent(RatingActivity.this,MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        String getName = currentRating.getSupermarketName();
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        intent.putExtra("namekey", getName);
-                        startActivity(intent);
-                        startActivity(intent);
-                        //TextView avgRating = findViewById(R.id.showAvg);
-                       // avgRating.setText("" + avg[0]);
+
+                        TextView avgRating = findViewById(R.id.showAvg);
+                       avgRating.setText("" + avg);
                     }
                 }
             });
         }
+
+        public void initgoBackButton(){
+        Button goBack = findViewById(R.id.goHome);
+        goBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RatingActivity.this,MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                String getName = currentRating.getSupermarketName();
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("namekey", getName);
+                startActivity(intent);
+                startActivity(intent);
+            }
+        });
+
+        }
+
+
     }
 

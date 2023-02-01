@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 currentRating.setAddress(etStreetAddress.getText().toString());
             }
         });
+
         final EditText etCity = findViewById(R.id.cityEdit);
         etStreetAddress.addTextChangedListener(new TextWatcher() {
             @Override
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentRating.setAddress(etCity.getText().toString());
+                currentRating.setCity(etCity.getText().toString());
             }
         });
         final EditText etState = findViewById(R.id.stateEdit);
@@ -106,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentRating.setAddress(etState.getText().toString());
+                currentRating.setState(etState.getText().toString());
             }
         });
         final EditText etZipcode = findViewById(R.id.zipcodeEdit);
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentRating.setAddress(etZipcode.getText().toString());
+                currentRating.setZipcode(etZipcode.getText().toString());
             }
         });
     }

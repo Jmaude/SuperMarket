@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="end">
+    android:gravity="end"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/ldView"
@@ -17,8 +17,9 @@
 
     <RatingBar
         android:id="@+id/ldRatingBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/pdView"
@@ -30,8 +31,9 @@
 
     <RatingBar
         android:id="@+id/pdRatingBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/mdView"
@@ -43,8 +45,9 @@
 
     <RatingBar
         android:id="@+id/mdRatingBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/csView"
@@ -56,8 +59,9 @@
 
     <RatingBar
         android:id="@+id/csRatingBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/eocView"
@@ -68,8 +72,9 @@
 
     <RatingBar
         android:id="@+id/eocRatingBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -101,5 +106,11 @@
             android:textAlignment="center"
             android:textSize="20sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/goHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
 
 </LinearLayout>

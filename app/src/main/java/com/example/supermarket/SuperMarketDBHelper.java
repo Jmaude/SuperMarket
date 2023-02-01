@@ -6,14 +6,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class SuperMarketDBHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "ratings.dp";
+    private static final String DATABASE_NAME = "ratings.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String CREATE_TABLE_CONTACT =
 
             "create table rating (_id integer primary key autoincrement,"
-                    + "supermarketname text not null, streetaddress text,"
-                    + "city text, state text, zipcode text, "
+                    + "supermarketname text not null, streetaddress text not null,"
+                    + "city text not null, state text not null, zipcode text not null, "
                     + "liquordept text, producedept text, meatdept text,"
                     + "cheeseselection text, easeofcheckout text);";
 
