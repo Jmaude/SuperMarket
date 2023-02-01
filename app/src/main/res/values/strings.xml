@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Super!Market</string>
+    <string name="supermaket_name">Supermaket Name</string>
+    <string name="rate">Rate</string>
+    <string name="supermarket_address">Supermarket Address</string>
+    <string name="supermarket">Supermarket :</string>
+    <string name="name">Name:</string>
+    <string name="address">Address</string>
 </resources>
